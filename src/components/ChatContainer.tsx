@@ -29,15 +29,15 @@ export function ChatContainer({
 
   if (!selectedUniversity) {
     return (
-      <div className="flex flex-col items-center justify-center p-20 space-y-8 text-center min-h-[500px]">
+      <div className="flex flex-col items-center justify-center p-20 space-y-8 text-center min-h-[500px] bg-gradient-to-br from-slate-800/30 to-purple-800/30 backdrop-blur-sm">
         <div className="relative">
           {/* Animated background */}
-          <div className="absolute inset-0 bg-gradient-to-r from-teal-400/20 to-cyan-500/20 rounded-full blur-2xl animate-pulse" />
-          <div className="absolute inset-0 bg-gradient-to-r from-blue-400/10 to-purple-500/10 rounded-full blur-3xl animate-float" />
+          <div className="absolute inset-0 bg-gradient-to-r from-purple-400/20 to-pink-500/20 rounded-full blur-2xl animate-pulse" />
+          <div className="absolute inset-0 bg-gradient-to-r from-cyan-400/10 to-purple-500/10 rounded-full blur-3xl animate-float" />
           
           {/* Main icon */}
-          <div className="relative bg-gradient-to-r from-teal-500 to-cyan-500 p-8 rounded-full shadow-2xl border border-white/10">
-            <MessageCircle className="w-16 h-16 text-white" />
+          <div className="relative bg-gradient-to-r from-purple-500 to-pink-500 p-8 rounded-full shadow-2xl border border-white/10">
+            <Brain className="w-16 h-16 text-white" />
             <div className="absolute top-2 right-2">
               <Sparkles className="w-6 h-6 text-yellow-300 animate-pulse" />
             </div>
@@ -46,14 +46,14 @@ export function ChatContainer({
         
         <div className="space-y-4 max-w-md">
           <h3 className="text-3xl font-bold bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">
-            Ready to Explore?
+            Ready to Learn?
           </h3>
           <p className="text-xl text-gray-300 leading-relaxed">
-            Select a university above to start an interactive conversation with our AI assistant
+            Select an institution above to begin your personalized learning journey with Capryos AI
           </p>
           <div className="flex items-center justify-center gap-2 text-sm text-gray-400 mt-6">
-            <div className="w-2 h-2 bg-teal-400 rounded-full animate-pulse" />
-            <span>Get instant answers about programs, requirements, and more</span>
+            <div className="w-2 h-2 bg-purple-400 rounded-full animate-pulse" />
+            <span>Powered by advanced AI for intelligent educational guidance</span>
           </div>
         </div>
       </div>
@@ -62,13 +62,13 @@ export function ChatContainer({
 
   return (
     <div className="w-full min-h-[600px] relative">
-      <div className="relative bg-gradient-to-br from-gray-800/30 via-gray-700/20 to-gray-800/30 backdrop-blur-xl overflow-hidden">
+      <div className="relative bg-gradient-to-br from-slate-800/30 via-purple-800/20 to-slate-800/30 backdrop-blur-xl overflow-hidden">
         {/* Enhanced Header with University Info */}
-        <div className="p-8 border-b border-gray-600/30 bg-gradient-to-r from-gray-800/60 to-gray-700/60 backdrop-blur-sm">
+        <div className="p-8 border-b border-purple-600/30 bg-gradient-to-r from-slate-800/60 to-purple-800/60 backdrop-blur-sm">
           <div className="flex items-center gap-6">
             <div className="flex-shrink-0 relative">
-              <div className="absolute -inset-2 bg-gradient-to-r from-teal-400/30 to-cyan-400/30 rounded-2xl blur-lg" />
-              <div className="relative p-4 bg-gradient-to-r from-gray-700/80 to-gray-600/80 backdrop-blur-sm rounded-2xl border border-gray-500/30">
+              <div className="absolute -inset-2 bg-gradient-to-r from-purple-400/30 to-pink-400/30 rounded-2xl blur-lg" />
+              <div className="relative p-4 bg-gradient-to-r from-slate-700/80 to-purple-700/80 backdrop-blur-sm rounded-2xl border border-purple-500/30">
                 <img
                   src={selectedUniversity.logo}
                   alt={selectedUniversity.name}
@@ -78,9 +78,9 @@ export function ChatContainer({
             </div>
             <div className="flex-1">
               <h2 className="text-2xl font-bold bg-gradient-to-r from-white to-gray-200 bg-clip-text text-transparent mb-2">
-                Chat with {selectedUniversity.name}
+                Exploring {selectedUniversity.name}
               </h2>
-              <p className="text-gray-300 text-lg leading-relaxed">
+              <p className="text-purple-200 text-lg leading-relaxed">
                 {selectedUniversity.description}
               </p>
             </div>
@@ -88,7 +88,7 @@ export function ChatContainer({
         </div>
 
         {/* Predefined Questions Section */}
-        <div className="p-8 border-b border-gray-600/30 bg-gradient-to-r from-gray-800/40 to-gray-700/40 backdrop-blur-sm">
+        <div className="p-8 border-b border-purple-600/30 bg-gradient-to-r from-slate-800/40 to-purple-800/40 backdrop-blur-sm">
           <PredefinedQuestions onSelect={onSend} />
         </div>
 

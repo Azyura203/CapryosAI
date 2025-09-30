@@ -14,7 +14,7 @@ export function ConsultationButton({ universityName }: ConsultationButtonProps) 
   const { t } = useTranslation();
 
   // Flag to disable/enable the booking system
-  const isBookingSystemEnabled = false; // Set to `false` to disable bookings
+  const isBookingSystemEnabled = false; // Temporarily disabled for development
 
   const handleSubmit = async (formData: ConsultationFormData) => {
     if (!isBookingSystemEnabled) {
@@ -47,14 +47,14 @@ export function ConsultationButton({ universityName }: ConsultationButtonProps) 
         }}
         className={`flex items-center gap-2 px-4 py-2 ${
           isBookingSystemEnabled
-            ? 'bg-blue-600 hover:bg-blue-700'
-            : 'bg-gray-400 cursor-not-allowed'
+            ? 'bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700'
+            : 'bg-slate-600 cursor-not-allowed opacity-50'
         } text-white rounded-lg transition-colors`}
         aria-label="Book a Consultation"
         disabled={!isBookingSystemEnabled} // Disable the button when the booking system is off
       >
         <Calendar className="w-5 h-5" />
-        {t('consultation.button')} {/* Use translation for button text */}
+        Book Consultation (Coming Soon)
       </button>
 
       {showForm && isBookingSystemEnabled && ( // Only show the form if the booking system is enabled

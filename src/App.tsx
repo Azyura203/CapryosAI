@@ -16,9 +16,9 @@ export function App() {
   } = useUniversityChat();
 
   return (
-    <div className="min-h-screen flex flex-col bg-gray-50">
+    <div className="min-h-screen flex flex-col bg-gradient-to-br from-slate-900 via-purple-900 to-slate-800">
       <Header />
-      <div className="bg-gradient-to-b from-gray-950 via-gray-700 to-gray-500">
+      <div className="bg-gradient-to-b from-slate-900 via-purple-900 to-slate-800">
       <LandingHero />
       <ChatInterface
         selectedUniversity={selectedUniversity}

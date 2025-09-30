@@ -1,5 +1,5 @@
 import React, { useMemo } from 'react';
-import { MessageSquare, Bot, Volume2, Copy, Check } from 'lucide-react';
+import { MessageSquare, Brain, Volume2, Copy, Check, Sparkles } from 'lucide-react';
 import { Message } from '../types/chat';
 import { clsx } from 'clsx';
 import { formatMarkdown } from '../utils/formatMarkdown';
@@ -54,10 +54,13 @@ export const ChatMessage: React.FC<ChatMessageProps> = ({ message, index, totalM
     >
       {!isUser && (
         <div className="flex-shrink-0 relative">
-          <div className="p-3 bg-gradient-to-r from-teal-500 to-cyan-500 rounded-2xl shadow-lg">
-            <Bot className="w-6 h-6 text-white" />
+          <div className="p-3 bg-gradient-to-r from-purple-500 to-pink-500 rounded-2xl shadow-lg">
+            <Brain className="w-6 h-6 text-white" />
+            <div className="absolute -top-1 -right-1">
+              <Sparkles className="w-3 h-3 text-yellow-300 animate-pulse" />
+            </div>
           </div>
-          <div className="absolute -bottom-1 -right-1 w-4 h-4 bg-green-400 rounded-full border-2 border-white animate-pulse"></div>
+          <div className="absolute -bottom-1 -right-1 w-4 h-4 bg-purple-400 rounded-full border-2 border-white animate-pulse"></div>
         </div>
       )}
 
@@ -73,8 +76,8 @@ export const ChatMessage: React.FC<ChatMessageProps> = ({ message, index, totalM
           className={clsx(
             'px-6 py-4 rounded-3xl shadow-lg backdrop-blur-sm border transition-all duration-300 hover:shadow-xl',
             isUser 
-              ? 'bg-gradient-to-r from-teal-500 to-cyan-500 text-white border-teal-400/30 ml-auto' 
-              : 'bg-white/10 text-gray-100 border-white/20 mr-auto'
+              ? 'bg-gradient-to-r from-purple-500 to-pink-500 text-white border-purple-400/30 ml-auto' 
+              : 'bg-slate-800/60 text-purple-50 border-purple-400/20 mr-auto'
           )}
           style={{
             fontFamily:
@@ -114,21 +117,21 @@ export const ChatMessage: React.FC<ChatMessageProps> = ({ message, index, totalM
           <div className="flex items-center gap-2 mt-3 ml-2">
             <button
               onClick={handleSpeak}
-              className="group p-2 bg-white/10 hover:bg-white/20 rounded-xl border border-white/20 hover:border-teal-400/50 transition-all duration-200"
+              className="group p-2 bg-purple-500/20 hover:bg-purple-500/30 rounded-xl border border-purple-400/30 hover:border-purple-300/50 transition-all duration-200"
               title="Listen to response"
             >
-              <Volume2 className="w-4 h-4 text-gray-400 group-hover:text-teal-400 transition-colors" />
+              <Volume2 className="w-4 h-4 text-purple-300 group-hover:text-purple-200 transition-colors" />
             </button>
             
             <button
               onClick={handleCopy}
-              className="group p-2 bg-white/10 hover:bg-white/20 rounded-xl border border-white/20 hover:border-teal-400/50 transition-all duration-200"
+              className="group p-2 bg-purple-500/20 hover:bg-purple-500/30 rounded-xl border border-purple-400/30 hover:border-purple-300/50 transition-all duration-200"
               title="Copy message"
             >
               {copied ? (
-                <Check className="w-4 h-4 text-green-400" />
+                <Check className="w-4 h-4 text-green-300" />
               ) : (
-                <Copy className="w-4 h-4 text-gray-400 group-hover:text-teal-400 transition-colors" />
+                <Copy className="w-4 h-4 text-purple-300 group-hover:text-purple-200 transition-colors" />
               )}
             </button>
           </div>
@@ -137,8 +140,8 @@ export const ChatMessage: React.FC<ChatMessageProps> = ({ message, index, totalM
 
       {isUser && (
         <div className="flex-shrink-0 relative order-2">
-          <div className="p-3 bg-white/10 backdrop-blur-sm rounded-2xl border border-white/20 shadow-lg">
-            <MessageSquare className="w-6 h-6 text-teal-400" />
+          <div className="p-3 bg-purple-500/20 backdrop-blur-sm rounded-2xl border border-purple-400/30 shadow-lg">
+            <MessageSquare className="w-6 h-6 text-purple-300" />
           </div>
         </div>
       )}

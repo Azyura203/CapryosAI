@@ -6,90 +6,18 @@ import universityData from '../../data/universities.json';
 const OPENAI_API_KEY = import.meta.env.VITE_OPENAI_API_KEY;
 
 export async function callOpenAI(messages: { role: string; content: string }[]) {
-  if (!OPENAI_API_KEY) {
-    throw new Error(
-      'OpenAI API key is not configured. Please add your API key to the .env file:\n' +
-      'VITE_OPENAI_API_KEY=your_actual_api_key'
-    );
-  }
-
-  if (!Array.isArray(messages) || messages.length === 0) {
-    throw new Error('Messages array is empty or not provided to OpenAI call.');
-  }
-
-  const currentLanguage = i18n.language;
-  const systemMessage = messages[0];
-
-  // Remove old language directive if exists
-  systemMessage.content = systemMessage.content.replace(/\nIMPORTANT: You must respond ONLY in.*?[.]/g, '');
-
-  // Append additional university details based on query content
-  const appendDetails = (query: string) => {
-    const austonMM = universityData['auston_myanmar'] as any;
-    let details = '';
-
-    if (query.includes('scholarship')) {
-      if (Array.isArray(austonMM.scholarships)) {
-        austonMM.scholarships.forEach((s: { name: string; description: string }) => {
-          details += `\nScholarship Available: ${s.name} - ${s.description}`;
-        });
-      }
-    }
-
-    if (query.includes('event')) {
-      austonMM.events?.forEach((e: { name: any; description: any; }) => {
-        details += `\nUpcoming Event: ${e.name} - ${e.description}`;
-      });
-    }
-
-    if (query.includes('campus')) {
-      austonMM.campuses?.forEach((c: { name: any; address: any; }) => {
-        details += `\nCampus Location: ${c.name} - ${c.address}`;
-      });
-    }
-
-    return details;
-  };
-
-  systemMessage.content += appendDetails(systemMessage.content.toLowerCase());
-
-  // Inject strict language rule
-  if (currentLanguage === 'my') {
-    systemMessage.content += `\n\nIMPORTANT: You must respond ONLY in Myanmar language (Burmese). Never mix languages. Use formal academic Burmese appropriate for university communication. Format all numbers, dates, and currencies in Myanmar format.`;
-  } else if (currentLanguage === 'zh') {
-    systemMessage.content += `\n\nIMPORTANT: You must respond ONLY in Simplified Chinese. Never mix languages. Use formal academic Chinese appropriate for university communication.`;
-  } else {
-    systemMessage.content += `\n\nIMPORTANT: You must respond ONLY in English. Never mix languages. Use formal academic English appropriate for university communication.`;
-  }
-
-  try {
-    const response = await fetch('https://api.openai.com/v1/chat/completions', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        'Authorization': `Bearer ${OPENAI_API_KEY}`,
-      },
-      body: JSON.stringify({
-        ...OPENAI_CONFIG,
-        messages,
-      }),
-    });
-
-    if (!response.ok) {
-      const errorData = await response.json();
-      throw new Error(errorData.error?.message || `API error: ${response.status}`);
-    }
-
-    const data = await response.json();
-    const content = data?.choices?.[0]?.message?.content;
-
-    if (!content) {
-      throw new Error('Received an empty response from OpenAI.');
-    }
-
-    return content.trim();
-  } catch (err: any) {
-    console.error("❌ OpenAI fetch failed:", err);
-    return "⚠️ Sorry, I couldn't process your request right now. Please try again later.";
-  }
+  // API temporarily disabled for development
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      const responses = [
+        "🤖 **Welcome to Capryos AI!** \n\nI'm your intelligent assistant, ready to help you explore educational opportunities and answer your questions. \n\n**What I can help you with:**\n- Program information and requirements\n- Admission guidance\n- Course details and curriculum\n- Career prospects\n- Application processes\n\nFeel free to ask me anything about your educational journey!",
+        "✨ **Great question!** \n\nI'd be happy to provide you with detailed information about our programs. Here are some key highlights:\n\n**🎓 Available Programs:**\n- Engineering & Technology\n- Computer Science & IT\n- Business & Management\n- Digital Innovation\n\n**📋 Entry Requirements:**\n- Academic qualifications vary by program\n- English proficiency requirements\n- Portfolio submissions for certain courses\n\nWould you like more specific information about any particular program?",
+        "🌟 **Excellent choice!** \n\nOur programs are designed with industry needs in mind. Here's what makes us special:\n\n**🚀 Key Features:**\n- Cutting-edge curriculum\n- Industry partnerships\n- Hands-on learning approach\n- Global recognition\n- Career support services\n\n**💼 Career Outcomes:**\n- High employment rates\n- Competitive salaries\n- Industry connections\n- Continuous learning opportunities\n\nLet me know if you'd like to explore specific career paths!",
+        "📚 **Program Details** \n\nI can provide comprehensive information about:\n\n**Duration & Structure:**\n- Flexible learning schedules\n- Full-time and part-time options\n- Online and on-campus delivery\n\n**Costs & Financial Aid:**\n- Competitive tuition fees\n- Scholarship opportunities\n- Payment plan options\n- Financial assistance programs\n\n**Support Services:**\n- Academic mentoring\n- Career counseling\n- Student support services\n\nWhat specific aspect would you like to know more about?"
+      ];
+      
+      const randomResponse = responses[Math.floor(Math.random() * responses.length)];
+      resolve(randomResponse);
+    }, 1000 + Math.random() * 1500); // Random delay between 1-2.5 seconds
+  });
 }

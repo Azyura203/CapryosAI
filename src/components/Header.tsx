@@ -1,57 +1,66 @@
 import React from 'react';
 import { LanguageSelector } from './LanguageSelector';
 import { useTranslation } from 'react-i18next';
+import { Brain, Sparkles, Zap } from 'lucide-react';
 
 export function Header() {
   const { t } = useTranslation();
 
   return (
-    <header className="bg-gray-900/95 backdrop-blur-md shadow-lg border-b border-gray-700/50 sticky top-0 z-50">
+    <header className="bg-gradient-to-r from-slate-900 via-purple-900 to-slate-900 backdrop-blur-md shadow-2xl border-b border-purple-500/20 sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 py-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between">
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-6">
             {/* Enhanced Logo Section */}
             <div className="group relative">
-              {/* Glow effect */}
-              <div className="absolute -inset-2 bg-gradient-to-r from-teal-500/20 to-cyan-500/20 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 blur-xl" />
+              {/* Animated glow effect */}
+              <div className="absolute -inset-3 bg-gradient-to-r from-purple-500/30 via-pink-500/30 to-cyan-500/30 rounded-3xl opacity-0 group-hover:opacity-100 transition-all duration-500 blur-xl animate-pulse" />
               
               {/* Logo container */}
-              <div className="relative p-3 bg-gradient-to-r from-gray-800/50 to-gray-700/50 backdrop-blur-sm rounded-2xl border border-gray-600/30 group-hover:border-teal-400/50 transition-all duration-300">
-                <img
-                  src="https://www.ljmu.ac.uk/-/media/ljmu/logos/ljmulogotransparent2.gif?la=en&h=550&w=1549&hash=395EA1E00B1C6C7282F5573B4571BE25"
-                  alt="Liverpool John Moores University Logo"
-                  className="w-16 h-10 sm:w-20 sm:h-12 md:w-24 md:h-16 lg:w-32 lg:h-20 object-contain filter brightness-110 contrast-110 group-hover:scale-105 transition-transform duration-300"
-                  title="Liverpool John Moores University Logo"
-                />
+              <div className="relative p-4 bg-gradient-to-br from-purple-600/20 via-pink-600/20 to-cyan-600/20 backdrop-blur-sm rounded-3xl border border-purple-400/30 group-hover:border-purple-300/50 transition-all duration-300 shadow-lg">
+                <div className="flex items-center gap-3">
+                  {/* Main logo icon */}
+                  <div className="relative">
+                    <Brain className="w-10 h-10 text-purple-400 group-hover:text-purple-300 transition-colors duration-300" />
+                    <div className="absolute -top-1 -right-1">
+                      <Sparkles className="w-4 h-4 text-cyan-400 animate-pulse" />
+                    </div>
+                  </div>
+                  
+                  {/* Brand name */}
+                  <div className="flex flex-col">
+                    <h1 className="text-2xl sm:text-3xl font-bold bg-gradient-to-r from-purple-400 via-pink-400 to-cyan-400 bg-clip-text text-transparent">
+                      Capryos AI
+                    </h1>
+                    <div className="flex items-center gap-1">
+                      <Zap className="w-3 h-3 text-purple-400" />
+                      <span className="text-xs text-purple-300 font-medium">Intelligent Assistant</span>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
 
-            {/* Enhanced App Name Section */}
-            <div className="flex flex-col">
-              {/* Main Title */}
-              <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold relative group">
-                <span className="bg-gradient-to-r from-teal-400 via-cyan-400 to-blue-400 bg-clip-text text-transparent animate-gradient bg-[length:200%_200%]">
-                  Uni Buddy
-                </span>
-                <div className="absolute -bottom-1 left-0 w-full h-0.5 bg-gradient-to-r from-teal-400 to-cyan-400 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left" />
-              </h1>
-
-              {/* Subtitle */}
-              <div className="flex items-center gap-2 mt-1">
-                <p className="text-xs sm:text-sm text-gray-300 font-medium">
-                  Your Personal University Assistant
-                </p>
-                <span className="hidden sm:inline text-gray-500">•</span>
-                <p className="hidden sm:block text-xs sm:text-sm text-gray-400 font-medium">
-                  Liverpool John Moores University
-                </p>
-              </div>
+            {/* Enhanced Tagline */}
+            <div className="hidden md:flex flex-col">
+              <p className="text-lg font-semibold bg-gradient-to-r from-purple-300 to-cyan-300 bg-clip-text text-transparent">
+                Your Educational Journey Reimagined
+              </p>
+              <p className="text-sm text-purple-200/80">
+                Powered by Advanced AI Technology
+              </p>
             </div>
           </div>
 
-          {/* Language Selector Only */}
-          <div className="flex items-center">
+          {/* Right side controls */}
+          <div className="flex items-center gap-4">
             <LanguageSelector />
+            
+            {/* Status indicator */}
+            <div className="hidden sm:flex items-center gap-2 px-3 py-2 bg-green-500/20 rounded-full border border-green-400/30">
+              <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse" />
+              <span className="text-xs text-green-300 font-medium">Online</span>
+            </div>
           </div>
         </div>
       </div>
