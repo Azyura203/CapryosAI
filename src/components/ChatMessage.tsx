@@ -11,7 +11,6 @@ interface ChatMessageProps {
   message: Message;
   index: number;
   totalMessages: number;
-  originalEnglish?: string;
 }
 
 export const ChatMessage: React.FC<ChatMessageProps> = ({ message, index, totalMessages }) => {

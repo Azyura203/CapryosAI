@@ -23,7 +23,11 @@ export const resources = {
           cancel: 'Cancel'
         }
       },
-      // ... rest of the English translations
+      consultation: {
+        success: 'Consultation booked successfully!',
+        error: 'Failed to book consultation. Please try again.',
+        disabled: 'Consultation booking is temporarily disabled.'
+      }
     },
   },
   my: {
@@ -50,7 +54,11 @@ export const resources = {
           cancel: 'ပယ်ဖျက်မည်'
         }
       },
-      // ... rest of the Myanmar translations
+      consultation: {
+        success: 'တိုင်ပင်ဆွေးနွေးမှု အောင်မြင်စွာ စာရင်းပေးသွင်းပြီးပါပြီ!',
+        error: 'တိုင်ပင်ဆွေးနွေးမှု စာရင်းပေးသွင်းရာတွင် အမှားဖြစ်ပွားခဲ့သည်။ ကျေးဇူးပြု၍ ထပ်မံကြိုးစားပါ။',
+        disabled: 'တိုင်ပင်ဆွေးနွေးမှု စာရင်းပေးသွင်းခြင်းကို ယာယီပိတ်ထားပါသည်။'
+      }
     },
   },
   zh: {
@@ -77,7 +85,11 @@ export const resources = {
           cancel: '取消'
         }
       },
-      // ... rest of the Chinese translations
+      consultation: {
+        success: '咨询预约成功！',
+        error: '预约咨询失败。请重试。',
+        disabled: '咨询预约功能暂时关闭。'
+      }
     },
   },
 };

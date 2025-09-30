@@ -4,7 +4,7 @@ import { ChatMessage } from './ChatMessage';
 import { ChatInput } from './ChatInput';
 import { PredefinedQuestions } from './PredefinedQuestions';
 import { useAutoScroll } from '../hooks/useAutoScroll';
-import { Sparkles, RotateCcw, Trash2, GraduationCap, MessageCircle } from 'lucide-react';
+import { Sparkles, RotateCcw, Trash2, GraduationCap, Brain } from 'lucide-react';
 
 interface ChatContainerProps {
   selectedUniversity: University | null;

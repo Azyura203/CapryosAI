@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import React, { useState } from 'react';
-import { Send, Mic, Sparkles, Zap } from 'lucide-react';
+import { Send, Mic, Brain, Zap } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import { useSpeechRecognition } from '../hooks/useSpeechRecognition';
 

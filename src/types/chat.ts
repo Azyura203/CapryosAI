@@ -1,9 +1,7 @@
-import { ReactNode } from 'react';
-
 export interface Message {
-  originalEnglish: ReactNode | Iterable<ReactNode>;
   role: 'user' | 'assistant';
   content: string;
+  originalEnglish?: string;
 }
 
 export interface University {

@@ -1,7 +1,6 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
 import { useState, useEffect } from 'react';
 
-export function useTypingEffect(text: string, enabled: boolean = true, _p0: number) {
+export function useTypingEffect(text: string, enabled: boolean = true, speed: number = 30) {
   const [displayText, setDisplayText] = useState('');
 
   useEffect(() => {
@@ -19,10 +18,10 @@ export function useTypingEffect(text: string, enabled: boolean = true, _p0: numb
       } else {
         clearInterval(timer);
       }
-    }, 30); // Adjust speed as needed
+    }, speed);
 
     return () => clearInterval(timer);
-  }, [text, enabled]);
+  }, [text, enabled, speed]);
 
   return displayText;
 }

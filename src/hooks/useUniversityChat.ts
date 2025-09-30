@@ -2,9 +2,7 @@
 import { useState } from 'react';
 import { Message, University } from '../types/chat';
 import { getChatResponse } from '../services/openai';
-import { getUniversityKey } from '../data/universityDetails'; // Import the function
-import { useTypingEffect } from '../hooks/useTypingEffect';
-
+import { getUniversityKey } from '../data/universityDetails';
 
 export function useUniversityChat() {
   const [selectedUniversity, setSelectedUniversity] = useState<University | null>(null);
@@ -22,7 +20,6 @@ export function useUniversityChat() {
 
     try {
       const universityKey = getUniversityKey(selectedUniversity.name);
-      console.log('University Key:', universityKey); // Debugging line
       if (!universityKey) {
         throw new Error('Invalid university selected');
       }
@@ -42,21 +39,21 @@ export function useUniversityChat() {
       const errorMessage = err instanceof Error ? err.message : 'An unexpected error occurred';
       setError(`Sorry, I encountered an error: ${errorMessage}`);
       console.error('Chat error:', err);
+      setIsLoading(false);
     } finally {
       // setIsLoading(false); // Removed to prevent ending loading too early
-    }
   };
 
   const handleUniversitySelect = (university: University | null) => {
-  if (!university) {
-    setSelectedUniversity(null);
-    return;
-  }
+    if (!university) {
+      setSelectedUniversity(null);
+      return;
+    }
 
-  setSelectedUniversity(university);
-  setMessages([]);
-  setError(null);
-};
+    setSelectedUniversity(university);
+    setMessages([]);
+    setError(null);
+  };
 
   return {
     selectedUniversity,
