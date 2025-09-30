@@ -42,7 +42,8 @@ export function useUniversityChat() {
       setIsLoading(false);
     } finally {
       // setIsLoading(false); // Removed to prevent ending loading too early
-  };
+      };
+  }
 
   const handleUniversitySelect = (university: University | null) => {
     if (!university) {
