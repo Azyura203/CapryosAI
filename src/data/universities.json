@@ -1,0 +1,728 @@
+{
+  "auston_singapore": {
+    "description": "Auston Institute of Management in Singapore offers accelerated engineering programs, providing high-quality and academically rigorous courses ranging from Diploma to degree levels.",
+    "programs": [
+      {
+        "id": "be-ee-dmu-sg",
+        "name": "Bachelor of Engineering (Hons) in Electrical and Electronic Engineering",
+        "level": "Bachelor",
+        "duration": "3 years",
+        "cost": {
+          "amount": 36800,
+          "currency": "SGD"
+        },
+        "awarded_by": {
+          "university": "De Montfort University",
+          "country": "UK"
+        },
+        "overview": "Focuses on the principles and applications of electrical and electronic engineering, covering areas such as circuit design, power systems, and telecommunications.",
+        "summary": "A 3-year engineering degree covering power systems, circuit design, and wireless communication.",
+        "keywords": [
+          "electrical engineering",
+          "circuit design",
+          "telecommunications",
+          "power systems",
+          "wireless communication"
+        ],
+        "tags": [
+          "engineering",
+          "electrical",
+          "bachelor",
+          "technology"
+        ],
+        "curriculum": {
+          "key_topics": [
+            "Digital Signal Processing",
+            "Microcontrollers and Applications",
+            "Renewable Energy Systems",
+            "Wireless Communication"
+          ],
+          "modules": []
+        },
+        "entry_criteria": {
+          "academic": [
+            "Diploma in a relevant field or equivalent qualifications"
+          ],
+          "english_proficiency": [
+            "IELTS 6.0 or equivalent"
+          ]
+        },
+        "career_prospects": [
+          "Electrical Engineer",
+          "Telecommunications Specialist",
+          "Power Systems Engineer"
+        ],
+        "image": "",
+        "version": "2025.05.30"
+      },
+      {
+        "id": "cs-dmu-sg",
+        "name": "Bachelor of Science (Hons) in Computer Security",
+        "level": "Bachelor",
+        "duration": "3 years",
+        "cost": {
+          "amount": 36800,
+          "currency": "SGD"
+        },
+        "awarded_by": {
+          "university": "De Montfort University",
+          "country": "UK"
+        },
+        "overview": "Covers topics related to cybersecurity, including network security, cryptography, and digital forensics, preparing students for careers in IT security.",
+        "summary": "A 3‑year degree focused on cybersecurity, covering network security, cryptography, digital forensics, and ethical hacking.",
+        "keywords": [
+          "cybersecurity",
+          "network security",
+          "cryptography",
+          "digital forensics",
+          "ethical hacking"
+        ],
+        "curriculum": {
+          "key_topics": [
+            "Cybersecurity Principles",
+            "Network Security",
+            "Digital Forensics",
+            "Ethical Hacking"
+          ],
+          "modules": []
+        },
+        "entry_criteria": {
+          "academic": [
+            "Diploma in a relevant field or equivalent qualifications"
+          ],
+          "english_proficiency": [
+            "IELTS 6.0 or equivalent"
+          ]
+        },
+        "career_prospects": [
+          "Cybersecurity Analyst",
+          "Network Administrator",
+          "Digital Forensics Specialist"
+        ],
+        "tags": [
+          "cybersecurity",
+          "IT security",
+          "bachelor",
+          "technology"
+        ],
+        "image": "",
+        "version": "2025.05.30"
+      },
+      {
+        "id": "be-me-dmu-sg",
+        "name": "Bachelor of Engineering (Hons) in Mechanical Engineering",
+        "level": "Bachelor",
+        "duration": "3 years",
+        "cost": {
+          "amount": 36800,
+          "currency": "SGD"
+        },
+        "awarded_by": {
+          "university": "De Montfort University",
+          "country": "UK"
+        },
+        "overview": "Focuses on the design, analysis, and manufacturing of mechanical systems, with subjects such as thermodynamics, fluid mechanics, and materials science.",
+        "summary": "A 3‑year mechanical engineering program emphasizing thermodynamics, fluid mechanics, mechanical design, and materials science.",
+        "keywords": [
+          "mechanical engineering",
+          "thermodynamics",
+          "fluid mechanics",
+          "mechanical design",
+          "materials science"
+        ],
+        "curriculum": {
+          "key_topics": [
+            "Thermodynamics",
+            "Fluid Mechanics",
+            "Mechanical Design",
+            "Materials Science"
+          ],
+          "modules": []
+        },
+        "entry_criteria": {
+          "academic": [
+            "Diploma in a relevant field or equivalent qualifications"
+          ],
+          "english_proficiency": [
+            "IELTS 6.0 or equivalent"
+          ]
+        },
+        "career_prospects": [
+          "Mechanical Engineer",
+          "Product Design Engineer",
+          "Manufacturing Specialist"
+        ],
+        "tags": [
+          "engineering",
+          "mechanical",
+          "bachelor",
+          "technology"
+        ],
+        "image": "",
+        "version": "2025.05.30"
+      }
+    ],
+    "scholarships": [
+      {
+        "name": "Matriculation Excellence Scholarship",
+        "description": "Awarded to outstanding Myanmar students who have passed the matriculation exam with high scores. This scholarship provides financial support to pursue Higher Diploma and Bachelor Degree programs.",
+        "eligibility": [
+          "Must be a Myanmar student",
+          "Passed matriculation exam with distinction or high GPA"
+        ],
+        "benefits": [
+          "Partial tuition fee waiver",
+          "Up to 10,000,000 MMK in scholarship value"
+        ],
+        "application_process": "Apply via Auston Myanmar's scholarship portal with academic transcripts and supporting documents.",
+        "link": "https://auston.edu.mm/scholarship/"
+      }
+    ],
+    "contact": {
+      "email": "info@auston.edu.sg",
+      "phone": "+65 6334 5900",
+      "address": "50 Ophir Road, #02-00, Singapore 188690"
+    }
+  },
+  "auston_myanmar": {
+    "description": "Auston College Myanmar specializes in IT and Business programs tailored for Myanmar's growing industries. It provides practical education and a pathway to globally recognized degrees.",
+    "campuses": [
+      {
+        "city": "Yangon",
+        "address": "Shop House 17-18, Junction Square, Kamaryut Township, Yangon 11041"
+      },
+      {
+        "city": "Mandalay",
+        "address": "No. (6/7), 107th Street, between 65th and 66th Streets, Chanmyatharzi Township, Mandalay"
+      }
+    ],
+    "events": [
+      {
+        "name": "Engineering Online Trial Classes",
+        "description": "Prospective students can participate in online trial classes to experience the engineering programs offered.",
+        "link": "https://auston.edu.mm/events/"
+      },
+      {
+        "name": "Educational Tours",
+        "description": "High school students are invited to tour the campus and learn about the programs and facilities.",
+        "link": "https://auston.edu.mm/events/"
+      }
+    ],
+    "programs": [
+      {
+        "id": "foundation-acm-mm",
+        "name": "Foundation",
+        "level": "Foundation",
+        "duration": "1 year",
+        "overview": "This program prepares students for university and professional success by equipping them with critical academic and professional skills.",
+        "summary": "A 1‑year foundation program building critical academic skills to prepare students for higher diploma or degree study.",
+        "keywords": [
+          "foundation",
+          "academic skills",
+          "critical thinking",
+          "pre‑university",
+          "English"
+        ],
+        "curriculum": {
+          "key_topics": [
+            "Critical Thinking",
+            "Academic Writing",
+            "Mathematics",
+            "English for Academic Purposes"
+          ],
+          "modules": [
+            "Critical Thinking and Analysis",
+            "Pre-University Mathematics (Advanced)",
+            "English for Academic Purposes",
+            "Academic Writing",
+            "Personal Psychology for Higher Education",
+            "Working in Groups",
+            "Technology Induction",
+            "My First CV",
+            "Digital and Global Careers",
+            "Interview Skills"
+          ]
+        },
+        "entry_criteria": {
+          "academic": [
+            "Matriculation Exam Passed",
+            "GCE 'O' Level, Minimum 3 Modules Passed"
+          ],
+          "english_proficiency": [
+            "Assessment Test is needed"
+          ]
+        },
+        "career_prospects": [
+          "Progression to Higher Diploma or Degree programs"
+        ],
+        "tags": ["foundation", "pre-university"],
+        "image": "",
+        "version": "2025.05.30"
+      },
+      {
+        "id": "hd-engtech-acm-mm",
+        "name": "Higher Diploma in Engineering Technology",
+        "level": "Higher Diploma",
+        "duration": "2 years",
+        "overview": "This program equips students with specialized skills in engineering, aligning with industry needs in Myanmar.",
+        "summary": "A 2‑year higher diploma focusing on electrical technology, digital circuits, and programming to prepare students for engineering roles.",
+        "keywords": [
+          "engineering technology",
+          "electrical technology",
+          "digital circuits",
+          "programming",
+          "higher diploma"
+        ],
+        "curriculum": {
+          "key_topics": [
+            "Electrical Technology",
+            "Engineering Mathematics",
+            "Digital Circuits",
+            "Programming"
+          ],
+          "modules": [
+            "Electrical Technology",
+            "Engineering Mathematics 1 & 2",
+            "Analogue Electronics Technology",
+            "Digital Circuits",
+            "Micro-controllers, Sensors & Actuators",
+            "Introduction to Programming",
+            "Project Management",
+            "Group Project",
+            "Internship"
+          ]
+        },
+        "entry_criteria": {
+          "academic": [
+            "Auston’s Enhanced Foundation Program Passed",
+            "Foundation completed by a recognized university from Myanmar"
+          ],
+          "english_proficiency": [
+            "Wall Street English Level 6 proficiency (for direct entry to Higher Diploma Program)",
+            "GCE 'O' Level (English) Passed"
+          ]
+        },
+        "career_prospects": [
+          "Engineering Technician",
+          "Junior Engineer",
+          "Further study to Bachelor's degree"
+        ],
+        "tags": [
+          "engineering",
+          "technology",
+          "diploma",
+          "higher diploma"
+        ],
+        "image": "",
+        "version": "2025.05.30"
+      },
+      {
+        "id": "hd-infra-net-acm-mm",
+        "name": "Higher Diploma in Infrastructure and Networks",
+        "level": "Higher Diploma",
+        "duration": "2 years",
+        "overview": "This program focuses on system administration, infrastructure security, and next-gen networking.",
+        "summary": "A 2‑year higher diploma specializing in network infrastructure, virtualization, security, and emerging technologies.",
+        "keywords": [
+          "network infrastructure",
+          "virtualization",
+          "security",
+          "artificial intelligence",
+          "blockchain"
+        ],
+        "curriculum": {
+          "key_topics": [
+            "Computer Networks",
+            "Virtualization",
+            "Security",
+            "Artificial Intelligence"
+          ],
+          "modules": [
+            "Computer Architecture and Network Implementation",
+            "Virtualization 1 & 2",
+            "Forensics Security and Management",
+            "Introduction to Programming",
+            "Project Management",
+            "Internship",
+            "Micro-Controllers, Sensors and Actuators",
+            "Artificial Intelligence",
+            "Block Chain Development"
+          ]
+        },
+        "entry_criteria": {
+          "academic": [
+            "Auston’s Enhanced Foundation Program Passed",
+            "Foundation completed by a recognized university from Myanmar"
+          ],
+          "english_proficiency": [
+            "Wall Street English Level 6 proficiency (for direct entry to Higher Diploma Program)",
+            "GCE 'O' Level (English) Passed"
+          ]
+        },
+        "career_prospects": [
+          "Network Administrator",
+          "Systems Engineer",
+          "Further study to Bachelor's degree"
+        ],
+        "tags": [
+          "networking",
+          "infrastructure",
+          "diploma",
+          "higher diploma"
+        ],
+        "image": "",
+        "version": "2025.05.30"
+      },
+      {
+        "id": "hd-mecheng-acm-mm",
+        "name": "Higher Diploma in Mechanical Engineering",
+        "level": "Higher Diploma",
+        "duration": "2 years",
+        "overview": "Provides core mechanical engineering skills, focusing on industrial robotics and automation.",
+        "summary": "A 2‑year higher diploma in mechanical engineering with emphasis on robotics, thermodynamics, and automation.",
+        "keywords": [
+          "mechanical engineering",
+          "robotics",
+          "thermodynamics",
+          "automation",
+          "higher diploma"
+        ],
+        "curriculum": {
+          "key_topics": [
+            "Mechanical Engineering",
+            "Robotics",
+            "Thermodynamics",
+            "Materials Science"
+          ],
+          "modules": [
+            "Engineering Mathematics 1 & 2",
+            "Fluid Dynamics",
+            "Project Management",
+            "Strength of Materials",
+            "Energy and Environment",
+            "Material Science and Manufacturing",
+            "Engineering Mechanics",
+            "Thermodynamics",
+            "Internship"
+          ]
+        },
+        "entry_criteria": {
+          "academic": [
+            "Auston’s Enhanced Foundation Program Passed",
+            "Foundation completed by a recognized university from Myanmar"
+          ],
+          "english_proficiency": [
+            "Wall Street English Level 6 proficiency (for direct entry to Higher Diploma Program)",
+            "GCE 'O' Level (English) Passed"
+          ]
+        },
+        "career_prospects": [
+          "Mechanical Engineering Technician",
+          "Automation Specialist",
+          "Further study to Bachelor's degree"
+        ],
+        "tags": [
+          "mechanical",
+          "engineering",
+          "diploma",
+          "higher diploma"
+        ],
+        "image": "",
+        "version": "2025.05.30"
+      },
+      {
+        "id": "bsc-cn-acm-mm",
+        "name": "Bachelor of Science (Hons) in Computer Networks",
+        "level": "Bachelor",
+        "duration": "3 years",
+        "overview": "This degree focuses on building and securing essential network systems for global industries.",
+        "summary": "A 3‑year bachelor’s degree in computer networks, covering network security, database systems, and web development.",
+        "keywords": [
+          "computer networks",
+          "network security",
+          "database systems",
+          "web development",
+          "cybersecurity"
+        ],
+        "curriculum": {
+          "key_topics": [
+            "Network Security",
+            "Database Systems",
+            "Web Development",
+            "Forensics"
+          ],
+          "modules": [
+            "Database Systems",
+            "Information Systems Development",
+            "Mobile and Web Development",
+            "Network Defense",
+            "Advanced Networks",
+            "User Experience Design",
+            "Network Forensics",
+            "Project"
+          ]
+        },
+        "entry_criteria": {
+          "academic": [
+            "Auston’s Higher Diploma Program Passed",
+            "Higher Diploma (relevant to the intended degree) completed by a recognized university"
+          ],
+          "english_proficiency": [
+            "Wall Street English Level 14 proficiency",
+            "IELTS – Band 6"
+          ]
+        },
+        "career_prospects": [
+          "Network Engineer",
+          "Cybersecurity Specialist",
+          "IT Consultant"
+        ],
+        "tags": [
+          "computer networks",
+          "cybersecurity",
+          "bachelor",
+          "IT"
+        ],
+        "image": "",
+        "version": "2025.05.30"
+      },
+      {
+        "id": "be-mechatronics-acm-mm",
+        "name": "Bachelor of Engineering (Hons) in Mechatronic and Autonomous Systems",
+        "level": "Bachelor",
+        "duration": "3 years",
+        "overview": "This program integrates mechanical, electronic, and computer systems to prepare students for careers in automation and robotics.",
+        "summary": "A 3-year bachelor's degree focusing on mechatronics, automation, and robotics.",
+        "keywords": [
+          "mechatronics",
+          "automation",
+          "robotics",
+          "mechanical engineering",
+          "electronic systems"
+        ],
+        "curriculum": {
+          "key_topics": [
+            "Control Systems",
+            "Embedded Systems",
+            "Robotics",
+            "Automation Engineering"
+          ],
+          "modules": []
+        },
+        "entry_criteria": {
+          "academic": [
+            "Auston’s Higher Diploma Program Passed",
+            "Higher Diploma (relevant to the intended degree) completed by a recognized university"
+          ],
+          "english_proficiency": [
+            "Wall Street English Level 14 proficiency",
+            "IELTS – Band 6"
+          ]
+        },
+        "career_prospects": [
+          "Automation Engineer",
+          "Robotics Engineer",
+          "Mechatronics Specialist"
+        ],
+        "tags": [
+          "mechatronics",
+          "automation",
+          "bachelor",
+          "engineering"
+        ],
+        "image": "",
+        "version": "2025.06.07"
+      }
+    ],
+    "scholarships": [
+      {
+        "name": "Matriculation Excellence Scholarship",
+        "description": "Awarded to outstanding Myanmar students who have passed the matriculation exam with high scores. This scholarship provides financial support to pursue Higher Diploma and Bachelor Degree programs.",
+        "eligibility": [
+          "Must be a Myanmar student",
+          "Passed matriculation exam with distinction or high GPA"
+        ],
+        "benefits": [
+          "Partial tuition fee waiver",
+          "Up to 10,000,000 MMK in scholarship value"
+        ],
+        "application_process": "Apply via Auston Myanmar's scholarship portal with academic transcripts and supporting documents.",
+        "link": "https://auston.edu.mm/scholarship/"
+      }
+    ],
+    "contact": {
+      "email": "info@auston.mm",
+      "phone": "+959969707000",
+      "address": "Shop House 17, Junction Square, Yangon 11041"
+    }
+  },
+  "ljmu": {
+    "description": "Liverpool John Moores University (LJMU) is a renowned public university in the United Kingdom, offering a wide range of undergraduate and postgraduate programs with a focus on academic excellence and practical learning.",
+    "programs": [
+      {
+        "id": "bsc-cs-ljmu-uk",
+        "name": "BSc (Hons) in Computer Science",
+        "level": "Bachelor",
+        "duration": "3 years",
+        "cost": {
+          "amount": 17400,
+          "currency": "GBP"
+        },
+        "awarded_by": {
+          "university": "Liverpool John Moores University",
+          "country": "UK"
+        },
+        "overview": "Provides a comprehensive understanding of computer science principles, including programming, algorithms, and software engineering.",
+        "summary": "A 3‑year computer science degree focusing on programming, algorithms, AI, and software engineering.",
+        "keywords": [
+          "computer science",
+          "programming",
+          "algorithms",
+          "software engineering",
+          "artificial intelligence"
+        ],
+        "curriculum": {
+          "key_topics": [
+            "Data Structures and Algorithms",
+            "Artificial Intelligence",
+            "Database Systems",
+            "Software Engineering"
+          ],
+          "modules": []
+        },
+        "entry_criteria": {
+          "academic": [
+            "A-levels or equivalent qualifications in a relevant field"
+          ],
+          "english_proficiency": [
+            "IELTS 6.0 or equivalent"
+          ]
+        },
+        "career_prospects": [
+          "Software Developer",
+          "Systems Analyst",
+          "AI Specialist"
+        ],
+        "tags": [
+          "computer science",
+          "bachelor",
+          "IT",
+          "technology"
+        ],
+        "image": "",
+        "version": "2025.05.30"
+      },
+      {
+        "id": "beng-mecheng-ljmu-uk",
+        "name": "BEng (Hons) in Mechanical Engineering",
+        "level": "Bachelor",
+        "duration": "3 years",
+        "cost": {
+          "amount": 17400,
+          "currency": "GBP"
+        },
+        "awarded_by": {
+          "university": "Liverpool John Moores University",
+          "country": "UK"
+        },
+        "overview": "Offers in-depth knowledge of mechanical engineering concepts, focusing on design, analysis, and manufacturing processes.",
+        "summary": "A 3‑year mechanical engineering program emphasizing engineering design, thermodynamics, and control systems.",
+        "keywords": [
+          "mechanical engineering",
+          "engineering design",
+          "thermodynamics",
+          "control systems",
+          "structural mechanics"
+        ],
+        "curriculum": {
+          "key_topics": [
+            "Engineering Design",
+            "Thermodynamics",
+            "Structural Mechanics",
+            "Control Systems"
+          ],
+          "modules": []
+        },
+        "entry_criteria": {
+          "academic": [
+            "A-levels or equivalent qualifications in a relevant field"
+          ],
+          "english_proficiency": [
+            "IELTS 6.0 or equivalent"
+          ]
+        },
+        "career_prospects": [
+          "Mechanical Engineer",
+          "Design Engineer",
+          "Project Manager in Engineering"
+        ],
+        "tags": [
+          "mechanical engineering",
+          "bachelor",
+          "engineering",
+          "technology"
+        ],
+        "image": "",
+        "version": "2025.05.30"
+      },
+      {
+        "id": "msc-datasci-ljmu-uk",
+        "name": "MSc in Data Science",
+        "level": "Master",
+        "duration": "1 year",
+        "cost": {
+          "amount": 16860,
+          "currency": "GBP"
+        },
+        "awarded_by": {
+          "university": "Liverpool John Moores University",
+          "country": "UK"
+        },
+        "overview": "Equips students with advanced skills in data analysis, machine learning, and big data technologies.",
+        "summary": "A 1‑year master’s program in data science covering machine learning, big data technologies, and data visualization.",
+        "keywords": [
+          "data science",
+          "machine learning",
+          "big data",
+          "data visualization",
+          "statistics"
+        ],
+        "curriculum": {
+          "key_topics": [
+            "Machine Learning",
+            "Big Data Technologies",
+            "Data Visualization",
+            "Statistical Analysis"
+          ],
+          "modules": []
+        },
+        "entry_criteria": {
+          "academic": [
+            "Bachelor's degree in a relevant field"
+          ],
+          "english_proficiency": [
+            "IELTS 6.5 or equivalent"
+          ]
+        },
+        "career_prospects": [
+          "Data Scientist",
+          "Business Intelligence Analyst",
+          "Machine Learning Engineer"
+        ],
+        "tags": [
+          "data science",
+          "master",
+          "analytics",
+          "technology"
+        ],
+        "image": "",
+        "version": "2025.05.30"
+      }
+    ],
+    "contact": {
+      "email": "international@ljmu.ac.uk",
+      "phone": "+44 151 231 5090",
+      "address": "Rodney House, 70 Mount Pleasant, Liverpool L3 5UX, United Kingdom"
+    }
+  }
+}
